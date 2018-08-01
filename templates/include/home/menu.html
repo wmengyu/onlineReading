@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<div>
+<div id="menus">
+    {% for sub in sub_list %}
+        <li><a id="font_sub" href="#">{{ sub.name }}</a></li>
+        <!--一级菜单对应的二级菜单-->
+        <ul id="sub_menu">
+            {% for menu in sub.subs %}
+                <li><a href="#">{{ menu.name }} |</a></li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</div>
+<!--
+<div id="banner">
+{#{% for banner in banners %}#}
+        <ul>
+            <li>
+{#                <a href=""><img src="{{ static_url }}{{ banner.img }}"></a>#}
+                <a href="#"><img src="http://127.0.0.1:8000/static/image/banner/{{ banner.img }}"></a>
+            </li>
+        </ul>
+{#{% endfor %}#}
+    </div>
+-->
+
+<div class="middle_right">
+    <div id="lunbobox">
+        <div id="toleft">
+            &lt;</div>
+                <div class="lunbo">
+                    {% for banner in banners %}
+                        <a href="#"><img src="http://127.0.0.1:8000/static/image/banner/{{ banner.img }}"></a>
+                    {% endfor %}
+                </div>
+                <div id="toright">&gt;</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <span></span>
+        </div>
+    </div>
+
+
+
+
+
+
+

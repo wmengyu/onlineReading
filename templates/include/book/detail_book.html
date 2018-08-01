@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+
+
+<div class="data-details">
+    {% for pro in pros %}
+        {% for img in pro.imgs %}
+    <ul><p>当前位置: {{ img.place }} > {{ img.type }} > {{ pro.title }}</p></ul>
+    <div class="zhengwen">
+        <a href=""><img src="http://127.0.0.1:8000/static/image/novel/{{ pro.img }}"></a>
+        <p class="title">{{ pro.title }}</p>
+        <p class="author">{{ pro.author }}   著</p>
+        <p class="content">{{ img.full_content }}</p>
+        <p class="p1"><a href="">收起</a></p>
+        <p class="p2"><a href="">展开</a></p>
+        <p class="reading1"><a href="#">立即阅读</a></p>
+        <p class="reading2"><a href="{% url 'add_cart'  pro.pro_id %}">加入书架</a></p>
+    </div>
+         {% endfor %}
+    {% endfor %}
+    <div class="update">
+
+    </div>
+
+</div>

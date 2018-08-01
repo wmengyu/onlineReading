@@ -1,0 +1,119 @@
+.top{
+    height: 30px;
+    width: 1500px;
+    background: gainsboro;
+}
+.up{
+    margin-left: 213px;
+}
+.up li{
+    float: left;
+    padding: 4px;
+    color: black;
+
+}
+.dropdown{
+    margin-left: 321px;
+    padding: 4px;
+}
+
+.search{
+    height: 36px;
+    width: 300px;
+    border: red 1px solid;
+    margin-left: 266px;
+    margin-top: 45px;
+}
+.img_1{
+    height: 10px;
+    width: 20px;
+    margin-left: 213px;
+    margin-top: 35px;
+    float: left;
+}
+.img_2{
+    margin-left: 797px;
+    margin-top: -36px;
+    background-color: red;
+    height: 36px;
+    width: 44px;
+    float: left;
+}
+.navi:first-child{
+    color: red;
+}
+.glyphicon-heart{
+    font-size: 16px;
+    width: 109px;
+    float: left;
+    margin-left: 913px;
+    margin-top: -31px;
+    padding: 5px;
+
+}
+.glyphicon-film{
+    font-size: 16px;
+    width: 109px;
+    float: left;
+    margin-left: 1040px;
+    margin-top: -27px;
+
+
+}
+.dropbtn {
+    /*background-color: #4CAF50;*/
+    color: black;
+    /*padding: 20px;*/
+    font-size: 9px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover{
+    color: red;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /*background-color: #f9f9f9;*/
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navi li{
+    float: left;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-weight:bold
+
+}
+.navi{
+    float: left;
+    margin-left: 245px;
+    border-bottom: 1px rosybrown solid;
+}
+.author a{
+    font-size: 20px;
+}
+.author{
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}

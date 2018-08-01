@@ -1,0 +1,51 @@
+#content_produce{
+    width: 1100px;
+    height: 400px;
+    border: gainsboro solid 1px;
+    margin-top: 40px;
+    margin-left: 244px;
+}
+
+.dingyue{
+    display: none;
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin-top: 34px;
+    margin-left: -182px;
+    border: gainsboro solid 1px;
+}
+
+.xiaoshuo{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 45px 2px 0px -4px;
+    border: gainsboro 1px solid;
+}
+.xiaoshuo>p{
+    float: left;
+    padding: 2px;
+}
+.title:hover{
+    color: red;
+}
+.read{
+    color:red;
+}
+.pro>p{
+    float: left;
+    padding: 3px;
+}
+#p4{
+    font-size: 20px;
+    font-weight: bold;
+}
+#p3{
+    color: red;
+}
+.tab_item ul li{
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block page_css %}
+{% endblock %}
+
+{% block page_jq %}
+    <script src="{% static 'js/content.js' %}"></script>
+{% endblock %}
+
+{% block page_head %}
+    {% include 'include/top1.html' %}
+{% endblock %}
+
+{% block page_content %}
+    {% include 'include/book/detail_book.html' %}
+    {% include 'include/book/detail_review.html' %}
+{% endblock %}

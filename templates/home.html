@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+
+{% block page_jq %}
+{#    <script src="{% static 'js/unslider.min.js' %}"></script>#}
+    <script src="{% static 'js/content.js' %}"></script>
+{% endblock %}
+
+{% block page_head %}
+<!-- 顶部-->
+    {% include 'include/top.html' %}
+{% endblock %}
+
+{% block page_content %}
+    <!--首页内容-->
+    {% include 'include/home/home_page.html' %}
+
+{% endblock %}
+
+{% block page_foot %}
+    {% include 'include/foot.html' %}
+{% endblock %}

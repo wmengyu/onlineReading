@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<div id="content_produce" xmlns:http="http://www.w3.org/1999/xhtml">
+    <ul class="pro">
+        <p id="p4">主编推荐</p>
+        <p id="p1">小说 |</p>
+        <p id="p2">图书 |</p>
+        <p id="p3">订阅</p>
+    </ul>
+    <div class="tab_item">
+        {% for pro in pros %}
+        <ul class="dingyue">
+            <a class="imgs" href=""><img src="http://127.0.0.1:8000/static/image/"></a>
+            <p class="title"></p>
+            <p>{{ 1 }}人订阅</p>
+            <a href="">立即阅读></a>
+            <p>{{ 2 }}</p>
+        </ul>
+        {% endfor %}
+    </div>
+    <div class="tab_item">
+        <ul>
+        {% for nov in novels %}
+            <li id="out">
+            <div class="xiaoshuo">
+                <a href="{% url 'detail' nov.pro_id %}"><img src="http://127.0.0.1:8000/static/image/novel/{{ nov.img }}"></a>
+                <p class="title"><a href="{% url 'detail' nov.pro_id %}">{{ nov.title}}</a></p>
+                <p class="author">{{ nov.author }}</p>
+                <p>{{ nov.product }}</p>
+                <p class="read"><a href="#">立即阅读></a></p>
+            </div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>

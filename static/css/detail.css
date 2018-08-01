@@ -1,0 +1,109 @@
+
+.data-details{
+    width: 693px;
+
+}
+
+.data-details>ul>P{
+    margin-top: 144px;
+    margin-left: 237px;
+}
+.data-details>ul>P:hover{
+    color: red;
+}
+.p1{
+    float: left;
+    margin-top: -13px;
+    margin-left: 658px;
+}
+.p2{
+    float: left;
+    margin-top: -13px;
+    margin-left: 658px;
+}
+.zhengwen>a>img{
+    float: left;
+    margin-left: 238px;
+    margin-top: -2px;
+    height: 237px;
+    width: 172px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    margin-left: 33px;
+}
+.author{
+    float: left;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+.content{
+    float: left;
+    margin-top: -187px;
+    margin-left: 436px;
+}
+.reading1{
+    float: left;
+    margin-top: -4px;
+    margin-left: 425px;
+    font-size: 16px;
+    background:#31b0d5;
+    border: #31b0d5 1px solid;
+}
+.reading2{
+    float: left;
+    margin-top: -34px;
+    margin-left: 531px;
+    font-size: 16px;
+    border: #31b0d5 1px solid;
+}
+.reading2:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.ping{
+    font-size: 20px;
+    float: left;
+    margin-left: 234px;
+    margin-top: -1px;
+    border-bottom: 1px solid gray;
+}
+.score_s{
+    font-size: 16px;
+    float: left;
+    margin-top: 43px;
+    margin-left: -60px;
+}
+#score>input{
+    height: 107px;
+    width: 446px;
+    float: left;
+    margin-left: -81px;
+    margin-top: 89px;
+}
+#pinglun{
+    border: 1px solid #31b0d5;
+    font-size: 12px;
+    height: 30px;
+    width: 37px;
+    float: left;
+    margin-left: -37px;
+    margin-top: 208px;
+    padding: 5px;
+}
+#content-main{
+    /*border-bottom: 1px gray solid;*/
+    height: 100px;
+    width: 400px;
+
+}
+
+#show_review{
+    /*float: left;*/
+    height: 400px;
+    width: 600px;
+    margin-top: 368px;
+    margin-left: 200px;
+}

@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<form action="{% url 'register' %}" method="post">
+
+        {% block page_jq %}
+        <script>
+            $(function () {
+                $('#btn').click(function () {
+                    p1 = $('#pwd').val();
+                    p2 = $('#reapeatpwd').val();
+                    if(p1!==p2){
+                        window.alert('两次输入的密码不一样');
+                        return false;
+                    }
+                        return true;
+                })
+            })
+        </script>
+        <script>
+               $(function () {
+                   alert('{{ msg }}')
+               })
+
+        </script>
+    {% endblock %}
+
+    {% csrf_token %}
+    请输入姓名:<input type="text" name="name">
+    请输入密码:<input id="pwd" type="password" name="password1">
+    请确认密码:<input id="reapeatpwd" type="password" name="password2">
+    <input id="btn" type="submit" onclick="myFunction()" value="提交">
+
+
+</form>

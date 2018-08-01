@@ -1,0 +1,30 @@
+{% load staticfiles%}
+
+
+
+<div>
+ <div id="review">
+ {% for pro in pros %}
+     <form action="{% url 'detail' pro.pro_id %}"  method="post">
+     {% csrf_token %}
+        <p class="ping">评论({{pro.count}})条</p>
+        <div id="score">
+            <p class="score_s">为该书打分</p>
+            <input type="text" name="review_words" value="评论:<<{{ pro.title }}>>">
+            <button id="pinglun">评论</button>
+        </div>
+     </form>
+ {% endfor %}
+ </div>
+
+ <div id="show_review">
+    {% for coment in coments %}
+        <ul id="content-main">
+        <p>{{ coment.u_id }}</p>
+        <p>{{ coment.content }}</p>
+        <p>{{ coment.create_date }} 发表</p>
+        </ul>
+    {% endfor %}
+ </div>
+
+</div>

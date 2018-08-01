@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<nav>
+<div class="top">
+    <div id="up_left">
+        <ul class="up">
+            {% for way in ways %}
+                <li><a href="#">{{ way.name }} |</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="up_right">
+        <div class="dropdown">
+            {% if request.session.userinfo %}
+            <a href="">{{ request.session.userinfo.name }}</a>
+            <a href="{%url 'logout'%}">退出</a>
+            {% else %}
+                <a class="dropbtn" href="{% url 'login' %}">登录 |</a>
+                <div class="dropdown-content">
+                    <a href="#">网易邮箱登录</a>
+                    <a href="#">qq登录</a>
+                    <a href="#">手机登录</a>
+                    <a href="#">微信登录</a>
+                </div>
+         </div>
+         <a href="{% url 'register' %}">注册 |</a>
+        {% endif %}
+        <a href="">举报</a>
+
+    </div>
+</div>
+<div id="m_top_left">
+    <form action="{% url 'search' %}" method="post">
+        {% csrf_token %}
+    <li class="img_1"><img src="{% static 'image/logo.png' %}"></li>
+    <input class="search" type="text" name="keyword" value="沙海">
+    <button class="img_2" type="submit" class="search_button">搜索</button>
+
+{#    <li class="img_2"><a href=""><img src="{% static 'image/search.png' %}"></a></li>#}
+    </form>
+</div>
+<div id="m_top_right">
+    <li class="glyphicon-heart"><a href="#">我的订阅</a></li>
+    <li class="glyphicon-film"><a href="#">我的书架</a></li>
+</div>
+
+<div id="nav">
+    <ul class="navi">
+        {% for nav in navigations %}
+            <li><a href="#">{{ nav.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <ul class="author">
+        <a class="glyphicon-pencil" href="">作者中心</a>
+        <a class="glyphicon-yen" href="">充值</a>
+        <a class="glyphicon-phone" href="">客户端</a>
+    </ul>
+
+</div>
+</nav>
